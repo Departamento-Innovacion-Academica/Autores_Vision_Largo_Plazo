@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autores Estratégicos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #00323c;
+            padding: 40px 20px;
+        }
+
+        .titulo {
+            color: #000;
+            background: #ffe600;
+            padding: 15px 35px;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            position: relative;
+            /* CAMBIO: Aumentado tamaño de la tarjeta */
+            width: 350px;
+            height: 520px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .info {
+            position: absolute;
+            /* CAMBIO: Ajuste para que se oculte con el nuevo tamaño */
+            bottom: -320px;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            text-align: center;
+            padding: 25px;
+            transition: 0.5s;
+        }
+
+        .info h3 {
+            color: #666;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .info h4 {
+            color: #999;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .redes a {
+            text-decoration: none;
+            font-size: 22px;
+            color: #27728f;
+            transition: .3s;
+        }
+
+        .redes a:hover {
+            transform: scale(1.2);
+        }
+
+        /* HOVER */
+
+        .card:hover {
+            transform: translateY(-15px);
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card:hover .info {
+            bottom: 0;
+        }
+        
+        /* INSTRUCCIÓN */
+        .instruccion {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .instruccion p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #27728f;
+            background: #eaf4f8;
+            padding: 15px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="instruccion">
+        <p>💡 Pase el mouse sobre las tarjetas para descubrir más información sobre cada autor.</p>
+    </div>
+
+    <div class="container">
+
+        <!-- PHILIP KOTLER -->
+        <div class="card">
+            <img src="../Citas1/img/Philip_kotler.jpeg" alt="Philip Kotler">
+
+            <div class="info">
+                <h3>Philip Kotler</h3>
+
+                <p>
+                    Destaca la importancia de comprender profundamente los clientes,
+                    la competencia y el entorno del mercado para tomar decisiones informadas.
+                </p>
+            </div>
+        </div>
+
+        <!-- MICHAEL PORTER -->
+        <div class="card">
+            <img src="../Citas1/img/Michael_porter.jpg" alt="Michael Porter">
+
+            <div class="info">
+                <h3>Michael Porter</h3>
+
+                <p>
+                    Define la estrategia como la creación de una posición única y
+                    valiosa en el mercado.
+                </p>
+            </div>
+        </div>
+
+        <!-- HENRY MINTZBERG -->
+        <div class="card">
+            <img src="../Citas1/img/HenryMintzberg.jpg" alt="Henry Mintzberg">
+
+            <div class="info">
+                <h3>Henry Mintzberg</h3>
+                <p>
+                    Define el pensamiento estratégico como el proceso de tomar decisiones
+                    orientadas al futuro.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
