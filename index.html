@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: poppins;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
@@ -43,12 +43,13 @@
 
         .card {
             position: relative;
-            /* CAMBIO: Aumentado tamaño de la tarjeta */
             width: 350px;
             height: 520px;
             overflow: hidden;
             cursor: pointer;
             transition: 0.5s;
+            border-radius: 10px;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
         }
 
         .card img {
@@ -56,6 +57,8 @@
             height: 100%;
             object-fit: cover;
             transition: 0.5s;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
         }
 
         .info {
@@ -106,19 +109,20 @@
         }
 
         /* HOVER */
-
         .card:hover {
             transform: translateY(-15px);
+            box-shadow: 0 18px 35px rgba(0, 0, 0, 0.679);
         }
 
         .card:hover img {
             transform: scale(1.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
         }
 
         .card:hover .info {
             bottom: 0;
         }
-        
+
         /* INSTRUCCIÓN */
         .instruccion {
             text-align: right;
@@ -129,7 +133,7 @@
             font-size: 20px;
             font-weight: bold;
             color: #27728f;
-            background: #eaf4f8;
+            background: #ffffffbd;
             padding: 15px 25px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -144,14 +148,14 @@
 <body>
 
     <div class="instruccion">
-        <p>💡 Pase el mouse sobre las tarjetas para descubrir más información sobre cada autor.</p>
+        <p>Haga <b>clic</b> sobre la Tarjeta para ampliar la información.</p>
     </div>
 
     <div class="container">
 
         <!-- PHILIP KOTLER -->
         <div class="card">
-            <img src="./img/Philip_kotler.jpeg" alt="Philip Kotler">
+            <img src="../Citas1/img/Philip_kotler.jpeg" alt="Philip Kotler">
 
             <div class="info">
                 <h3>Philip Kotler</h3>
@@ -165,7 +169,7 @@
 
         <!-- MICHAEL PORTER -->
         <div class="card">
-            <img src="./img/Michael_porter.jpg" alt="Michael Porter">
+            <img src="../Citas1/img/Michael_porter.jpg" alt="Michael Porter">
 
             <div class="info">
                 <h3>Michael Porter</h3>
@@ -179,8 +183,7 @@
 
         <!-- HENRY MINTZBERG -->
         <div class="card">
-            <img src="./img/HenryMintzberg.jpg" alt="Henry Mintzberg">
-           
+            <img src="../Citas1/img/HenryMintzberg.jpg" alt="Henry Mintzberg">
 
             <div class="info">
                 <h3>Henry Mintzberg</h3>
